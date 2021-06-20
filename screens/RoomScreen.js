@@ -5,7 +5,6 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import { useObserver,observer } from "mobx-react-lite";
 // import Icon from 'react-native-vector-icons/FontAwesome5';
-import  {socket}  from "socket.io-client";
 import {COLORS, SIZES, STYLE_DIR} from "../constants"
 import GeneralStore  from "../stores/GeneralStore";
 import GeoLocation from "../methods/GeoLocation";
@@ -23,7 +22,6 @@ var moment = require('moment')
 
  const RoomScreen = observer(({navigation,route })=> {
 
-    const socket = useSocket()
     const [message, setMessage] = useState(null)
       useEffect(() => {
         let id = route.params.id
