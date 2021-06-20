@@ -1,0 +1,5 @@
+{
+  "name": "Minian",
+  "displayName": "Minian",
+  "packagerOpts": { "config": "metro.config.js", "sourceExts": ["js","jsx","svg"] }
+}
